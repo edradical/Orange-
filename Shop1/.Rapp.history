@@ -1,0 +1,146 @@
+k
+x
+c
+q
+n
+{#
+	n <- c()#
+	i <- 0#
+	while (i != 8) {#
+		n <- append(n = n, values = as.numeric(readline('Введите число: ')))#
+		i <- i + 1#
+	}#
+	n = sort(n, decreasing = TRUE)#
+	n#
+}
+{#
+	i <- 0#
+	while (i != 8) {#
+		n <- append(n = n, values = as.numeric(readline('Введите число: ')))#
+		i <- i + 1#
+	}#
+	n = sort(n, decreasing = TRUE)#
+	n#
+}
+{#
+	n <- c()#
+	i <- 0#
+	while (i != 8) {#
+		n <- append(n = n, values = as.numeric(readline('Введите число: ')))#
+		i <- i + 1#
+	}#
+	n = sort(n, decreasing = TRUE)#
+	n#
+}
+{#
+	n <- vector()#
+	i <- 0#
+	while (i != 8) {#
+		n <- append(n = n, values = as.numeric(readline('Введите число: ')))#
+		i <- i + 1#
+	}#
+	n = sort(n, decreasing = TRUE)#
+	n#
+}
+{#
+	n <- vector(1)#
+	i <- 0#
+	while (i != 8) {#
+		n <- append(n = n, values = as.numeric(readline('Введите число: ')))#
+		i <- i + 1#
+	}#
+	n = sort(n, decreasing = TRUE)#
+	n#
+}
+{#
+	n <- c(1, 2)#
+	i <- 0#
+	while (i != 8) {#
+		n <- append(n = n, values = as.numeric(readline('Введите число: ')))#
+		i <- i + 1#
+	}#
+	n = sort(n, decreasing = TRUE)#
+	n#
+}
+{#
+	n <- vector()#
+	i <- 0#
+	while (i != 8) {#
+		n <- append(n = n, values = as.numeric(readline('Введите число: ', i)))#
+		i <- i + 1#
+	}#
+	n = sort(n, decreasing = TRUE)#
+	n#
+}
+{#
+	n <- vector()#
+	i <- 0#
+	while (i != 8) {#
+		n <- append(n=n, values = as.numeric(readline('Введите число: ')))#
+		i <- i + 1#
+	}#
+	n = sort(n, decreasing = TRUE)#
+	n#
+}
+x
+n
+typeof(n)
+n <- vector()
+typeof(n)
+n <- vector(7,6,5,5,43)
+n <- vector(7,6,5,43)
+n <- c(7,6,5,43)
+typeof(n)
+mode(n)
+n <- c(7,6,5,43,'k')
+n <- vector()
+{#
+	n <- vector()#
+	i <- 0#
+	while (i != 8) {#
+		n <- append(n = n, values = as.numeric(readline('Введите число: ')))#
+		i <- i + 1#
+	}#
+	n = sort(n, decreasing = TRUE)#
+	n#
+}
+{#
+	n <- vector()#
+	i <- 0#
+	while (i != 8) {#
+		n <- append(n = i, values = as.numeric(readline('Введите число: ')))#
+		i <- i + 1#
+	}#
+	n = sort(n, decreasing = TRUE)#
+	n#
+}
+{#
+	x <- vector()#
+	i <- 0#
+	while (i != 8) {#
+		x <- append(x = x, values = as.numeric(readline('Введите число: ')))#
+		i <- i + 1#
+	}#
+	x = sort(x, decreasing = TRUE)#
+	for (val in x) {#
+		print(paste(x[val], '>'))#
+	}#
+}
+x
+v1
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Магазин1')#
+dir()
+v1 <- read.table('in.txt', head = TRUE)
+v1
+v1[2][2:7] <- NULL
+v1
+v1[2] <- NULL #
+    v1[2,1] <- cbind(v1, 'Поставка')
+v1 <- read.table('in.txt', head = TRUE)#
+    while (length(v1)<10){ #
+      x <- as.integer((runif(1)-runif(1))*100)  #
+      if (1<=x & x<=100){#
+        v1[2] <- append(v1[2], x)
+}
+}

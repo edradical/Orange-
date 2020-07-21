@@ -1,0 +1,3925 @@
+{#
+	pow <- function(x, y, isDebug = FALSE) {#
+		if (isDebug) {#
+			return (print(paste0('pow2: x=', x, ', y=', y, ', расчет=', x^y)))#
+		} else{#
+			  return(x ^ y)#
+		}#
+	}#
+	z <- pow(4, 6, TRUE)#
+}
+{#
+	pow <- function(x, y, isDebug = FALSE) {#
+		if (isDebug) {#
+			return (print(paste0('pow2: x=', x, ', y=', y, ', расчет=', x^y)))#
+		} else{#
+			  return(x ^ y)#
+		}#
+	}#
+	z <- pow(4, 6, FALSE)#
+}
+z
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} else if (is.double(x,y,z) == FALSE){#
+			return(print('Значения не целые или не действительные'))#
+		} else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,8)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} else if (is.double(x) == FALSE and is.double(y) == FALSE and is.integer(z) == FALSE) {#
+			return(print('Значения не целые или не действительные'))#
+		} else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,8)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} else if (is.double(x) == FALSE and is.double(y) == FALSE and is.integer(z) == FALSE) {#
+			return(print('Значения не целые или не действительные'))#
+		} else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4.76,7.990,8.976)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if (is.double(x) == FALSE and is.double(y) == FALSE and is.integer(z) == FALSE) {#
+			return(print('Значения не целые или не действительные'))#
+		} #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,8)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if (is.double(x) == FALSE) {#
+			return(print('Значения не целые или не действительные'))#
+		} #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,8)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if (is.double(x) == FALSE) {#
+			return(print('Значения не целые или не действительные'))#
+		} #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,0)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if (is.double(x) == FALSE) {#
+			return(print('Значения не целые или не действительные'))#
+		} #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow('4',7,4)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if (is.double(x,y) == FALSE) {#
+			return(print('Значения не действительные'))#
+		} #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,4)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if ((is.double(x) and is.double(y)) == FALSE) {#
+			return(print('Значения не действительные'))#
+		} #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,4)#
+}
+{#
+	day_of_week <- function(x, y){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(which( x == y)))#
+		}#
+	}#
+	day_of_week(4)#
+}
+{#
+	day_of_week <- function(x, y){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(which(y) == x))#
+		}#
+	}#
+	day_of_week(4)#
+}
+y
+y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+	print(which(y) == 6)
+y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+	print(which(y == 6))
+y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+	print(y[which(y) == 4])
+y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+	print(y[which(4 == y)])
+{#
+	day_of_week <- function(x, y){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(y[x])#
+		}#
+	}#
+	day_of_week(4)
+y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+	print(y[3])
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(y[x])#
+		}#
+	}#
+	day_of_week(4)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(y[which(x == y)])#
+		}#
+	}#
+	day_of_week(4)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(y[x]))#
+		}#
+	}#
+	day_of_week(4)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(y(x)))#
+		}#
+	}#
+	day_of_week(4)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(y[y == x]))#
+		}#
+	}#
+	day_of_week(4)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(y))#
+		}#
+	}#
+	day_of_week(4)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(x / 2))#
+		}#
+	}#
+	day_of_week(4)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if (is.double(x) == FALSE) and (is.double(y) == F) {#
+			return(print('Значения не действительные'))#
+		} #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,4)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if ((is.double(x) == FALSE) and (is.double(y) == F)){#
+			return(print('Значения не действительные'))#
+		} #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,4)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if ((is.double(x) == FALSE){#
+			return(print('Значения не действительные'))#
+		} #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,4)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if (is.double(x) == FALSE){#
+			return(print('Значения не действительные'))#
+		} #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,4)#
+}
+{#
+	pow <- function(x, y, z){#
+		if (z == 0){#
+			return(print('На 0 делить нельзя'))#
+		} #
+		else if (is.double(x) == FALSE){#
+			return(print('Значения не действительные'))#
+		}#
+		else if (is.double(y) == FALSE){#
+			return(print('Значения не действительные'))#
+		}#
+		else if (is.double(z) == FALSE){#
+			return(print('Значения не действительные'))#
+		}		 #
+		else {#
+			return(print(x ^ y / z))#
+		}#
+	}#
+	pow(4,7,4)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			return(print(x / 2))#
+		}#
+	}#
+	day_of_week(4)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			z <- x / 2#
+			return(z)#
+		}#
+	}#
+	day_of_week(4)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			z <- x / 2#
+			return(z)#
+		}#
+	}#
+	day_of_week(3)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- which((x %% 7) == y)#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			z <- x / 2#
+			return(z)#
+		}#
+	}#
+	day_of_week(8)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			z <- x / 2#
+			return(z)#
+		}#
+	}#
+	day_of_week(8)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(8)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else{#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(2)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(round(x)))#
+		}#
+		else {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(2)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(2.87)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(0.1)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else if ((x < 8) and x >= 1) {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(3)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else if ((x < 8) and (x >= 1)) {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(3)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else if (1 <= x < 8) {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(3)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else if (x < 8) {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(3)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else if (x < 8) {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(0.9)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else if ((x < 8) & (x >= 1)) {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(0.9)#
+}
+{#
+	day_of_week <- function(x){#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else if ((x < 8) & (x >= 1)) {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+	}#
+	day_of_week(1)#
+}
+DEBUG_ON <- c(RU, ru, rus, ру, рус)
+{#
+	DEBUG_OFF <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+	DEBUG_ON <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		DEBUG_OFF <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		DEBUG_ON <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k in e) {#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else if ((x < 8) & (x >= 1)) {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+		}#
+		else {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+			}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, rus)#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k in english) {#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+		}#
+		else if (x < 1){#
+			return(print(" "))#
+		}#
+		else if (is.integer(x) == FALSE){#
+			return(print(y[round(x)]))#
+		}#
+		else if ((x < 8) & (x >= 1)) {#
+			z <- y[x]#
+			return(print(z))#
+		}#
+		}#
+		else {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+			}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, rus)#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k in english) {#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+		else {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+			}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, rus)#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k in english) {#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+		else {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+			}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, eng)#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k in english) {#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+		else if (if k in russian){#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+			}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, eng)#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k in english) {#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, eng)#
+}
+e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+	k <- 'eng'#
+	print(k in e)
+e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+	k <- 'eng'#
+	if (k in e){#
+		print('poo')#
+	}
+english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+	print('eng' %in% english)
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, 'eng')#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+		else {#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, 'eng')#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+		else if (k %in% russian)#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, 'eng')#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+			z <- e[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- e[x]#
+				return(print(z))#
+			}#
+		}#
+		else if (k %in% russian)#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, 'eng')#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+			z <- e[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- e[x]#
+				return(print(z))#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, 'eng')#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+			t <- e[x %% 7]#
+			return(print(t))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(e[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				return(print(t))#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, 'eng')#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+			t <- e[x %% 7]#
+			return(print(t))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(e[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				return(print(t))#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(1, 'рус')#
+}
+{#
+	day_of_week <- function(x, k){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+			t <- e[x %% 7]#
+			return(print(t))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(e[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				return(print(t))#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+			z <- y[x %% 7]#
+			return(print(z))#
+			}#
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(6, 'Eng')#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+				else {#
+					return(print(t))#
+				}  #
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round[x]]))#
+				else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+				else {#
+					return(print(t))#
+				}#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+				}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(6, 'Eng', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else {#
+					return(print(t))#
+				}  #
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round[x]]))#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else {#
+					return(print(t))#
+				}#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+				}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(6, 'Eng', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}  #
+			else if (x < 1){#
+			return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round[x]]))#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+				}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(6, 'Eng', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}  #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round[x]]))#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+				}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(6, 'Eng', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round[x]]))#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+				}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(6, 'Eng', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round[x]]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+				}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(6, 'Eng', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		else if (k %in% russian){#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				return(print(z))#
+				}#
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				return(print(y[round(x)]))#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				return(print(z))#
+			}#
+		}#
+	}#
+	day_of_week(6, 'Eng', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% english) {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				p <- yy[x %% 7]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				p <- e[x]#
+				z <- ee[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(6, 'Eng', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% english) {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				p <- yy[x %% 7]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				p <- e[x]#
+				z <- ee[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(6, 'rus', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% english) {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				p <- yy[x %% 7]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				p <- y[x]#
+				z <- yy[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(6, 'rus', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% english) {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				p <- yy[x %% 7]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				p <- y[x]#
+				z <- yy[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(6, 'rus')#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% english) {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				p <- yy[x %% 7]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				p <- yy[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(6, 'rus')#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% english) {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				p <- yy[x %% 7]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				p <- yy[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(9, 'rus')#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% english) {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				p <- yy[x %% 7]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				p <- yy[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(9, 'eng')#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% russian) {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				p <- yy[x %% 7]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				p <- yy[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(9, 'rus')#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday')#
+		y <- c('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')#
+		ee <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun')#
+		yy <- c('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вcк')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 7){#
+				t <- e[x %% 7]#
+				k <- ee[x %% 7]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% russian) {#
+			if (x > 7){#
+				z <- y[x %% 7]#
+				p <- yy[x %% 7]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 8) & (x >= 1)) {#
+				z <- y[x]#
+				p <- yy[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(9, 'rus', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septmber', 'October', 'November', 'December')#
+		y <- c('Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь')#
+		ee <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec' )#
+		yy <- c('Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 12){#
+				t <- e[x %% 12]#
+				k <- ee[x %% 12]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 13) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% russian) {#
+			if (x > 12){#
+				z <- y[x %% 12]#
+				p <- yy[x %% 12]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 13) & (x >= 1)) {#
+				z <- y[x]#
+				p <- yy[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(9, 'rus', T)#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septmber', 'October', 'November', 'December')#
+		y <- c('Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь')#
+		ee <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec' )#
+		yy <- c('Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 12){#
+				t <- e[x %% 12]#
+				k <- ee[x %% 12]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 13) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% russian) {#
+			if (x > 12){#
+				z <- y[x %% 12]#
+				p <- yy[x %% 12]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 13) & (x >= 1)) {#
+				z <- y[x]#
+				p <- yy[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(9, 'rus')#
+}
+{#
+	day_of_week <- function(x, k, isDebug = F){#
+		e <- c('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septmber', 'October', 'November', 'December')#
+		y <- c('Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь')#
+		ee <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec' )#
+		yy <- c('Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек')#
+		russian <- c('RU', 'ru', 'rus', 'ру', 'рус')#
+		english <- c('Eng', 'eng', 'English', 'english', 'англ', 'Англ', 'анг')#
+		if (k %in% english) {#
+			if (x > 12){#
+				t <- e[x %% 12]#
+				k <- ee[x %% 12]#
+				if (isDebug) {#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(ee[round(x)]))#
+				}	#
+					else{#
+					return(print(e[round(x)]))#
+				}#
+			}#
+			else if ((x < 13) & (x >= 1)) {#
+				t <- e[x]#
+				k <- ee[x]#
+				if (isDebug){#
+					return(print(k))#
+				}#
+					else{#
+					return(print(t))#
+				}#
+			}#
+		}#
+		if (k %in% russian) {#
+			if (x > 12){#
+				z <- y[x %% 12]#
+				p <- yy[x %% 12]#
+				if (isDebug) {#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				} #
+			} #
+			else if (x < 1){#
+				return(print(" "))#
+			}#
+			else if (is.integer(x) == FALSE){#
+				if (isDebug){#
+					return(print(yy[round(x)]))#
+				}	#
+					else{#
+					return(print(y[round(x)]))#
+				}#
+			}#
+			else if ((x < 13) & (x >= 1)) {#
+				z <- y[x]#
+				p <- yy[x]#
+				if (isDebug){#
+					return(print(p))#
+				}#
+					else{#
+					return(print(z))#
+				}#
+			}#
+		}#
+	}#
+	day_of_week(14, 'eng')#
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если преаышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini < out){#
+				k <- ini#
+				ini <- out#
+				out <- k#
+			}#
+		}#
+		return(ini, out)#
+	}#
+	z <- change(in1[2], out1[2])
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если преаышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini < out){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini, out)#
+	}#
+	z <- change(in1, out1)#
+}
+change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini, out)#
+	}#
+	z <- change(in1, out1)
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если преаышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini, out)#
+	}#
+	z <- change(in1, out1)#
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если преаышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini, out)#
+	}#
+	print(change(in1,out1)#
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если преаышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini, out)#
+	}#
+	print(change(in1,out1)
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если преаышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini, out)#
+	}#
+#
+	print(change(in1,out1))#
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если преаышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini)#
+		return(out)#
+	}#
+#
+	print(change(in1,out1))#
+}
+out1
+in1
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если преаышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		pirnt(return(ini))#
+		print(return(out))#
+	}#
+#
+	change(in1, out1)#
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если преаышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		print(return(ini))#
+		print(return(out))#
+	}#
+#
+	change(in1, out1)#
+}
+out1
+in1
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(c(ini, out))#
+	}#
+#
+	list(in1, out1) <- change(in1, out1)#
+}
+library(gsubfn)#
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(c(ini, out))#
+	}#
+#
+	list[in1, out1] <- change(in1, out1)#
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(c(ini, out))#
+	}#
+#
+	z <- change(in1, out1)#
+}
+z
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(c(ini, out))#
+	}#
+#
+	c(in1, out1) <- change(in1, out1)#
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(c(ini, out))#
+	}#
+#
+	in1 <- change(in1, out1)#
+}
+in1
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini)#
+	}#
+#
+	in1 <- change(in1, out1)#
+}
+in1
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini)#
+		return(out)#
+	}#
+#
+	in1 <- change(in1, out1)#
+	out1 <- cgange(in1, out1)#
+}
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini)#
+		return(out)#
+	}#
+#
+	in1 <- change(in1, out1)#
+	out1 <- change(in1, out1)#
+}
+in1
+out1
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	in1 <- read.table("store1_in.txt", head = TRUE)#
+	out1 <- read.table('store1_out.txt', head = TRUE)#
+	in2 <- read.table("store2_in.txt", head = TRUE)#
+	out2 <- read.table('store2_out.txt', head = TRUE)#
+	in3 <- read.table('store3_in.txt', head = TRUE)#
+	out3 <- read.table('store3_out.txt', head = TRUE)#
+	in4 <- read.table("store4_in.txt", head = TRUE)#
+	out4 <- read.table('store4_out.txt', head = TRUE)#
+	in5 <- read.table("store5_in.txt", head = TRUE)#
+	out5 <- read.table('store5_out.txt', head = TRUE)#
+	in6 <- read.table("store6_in.txt", head = TRUE)#
+	out6 <- read.table('store6_out.txt', head = TRUE)#
+	in7 <- read.table("store7_in.txt", head = TRUE)#
+	out7 <- read.table('store7_out.txt', head = TRUE)#
+	in8 <- read.table("store8_in.txt", head = TRUE)#
+	out8 <- read.table('store8_out.txt', head = TRUE)#
+	in9 <- read.table("store9_in.txt", head = TRUE)#
+	out9 <- read.table('store9_out.txt', head = TRUE)#
+	in10 <- read.table("store10_in.txt", head = TRUE)#
+	out10 <- read.table('store10_out.txt', head = TRUE)#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini)#
+	}#
+#
+	in1 <- change(in1, out1)#
+	in2 <- change(in2, out2)#
+	in3 <- change(in3, out3)#
+	in4 <- change(in4, out4)#
+	in5 <- change(in5, out5)#
+	in6 <- change(in6, out6)#
+	in7 <- change(in7, out7)#
+	in8 <- change(in8, out8)#
+	in9 <- change(in9, out9)#
+	in10 <- change(in10, out10)#
+#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(out)#
+	}#
+#
+	out1 <- change(in1, out1)#
+	out2 <- change(in2, out2)#
+	out3 <- change(in3, out3)#
+	out4 <- change(in4, out4)#
+	out5 <- change(in5, out5)#
+	out6 <- change(in6, out6)#
+	out7 <- change(in7, out7)#
+	out8 <- change(in8, out8)#
+	out9 <- change(in9, out9)#
+	out10 <- change(in10, out10)#
+#
+}
+in1
+out1
+read.multiple.objects(in1, out1, class = c("store1_in.txt", 'store1_out.txt'))
+f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))
+f
+d <- lapply(f, read.dta)
+d <- lapply(f, read.table)
+d
+str(d, give.attr = FALSE)
+in11 <- d[1]
+in11
+c(in1, out1) <- c(d[1], d[2])
+list(in1, out1) <- c(d[1], d[2])
+(in1, out1) <- c(d[1], d[2])
+in1, out1 <- c(d[1], d[2])
+c('in1', 'out1') <- c(d[1], d[2])
+getwd()#
+setwd('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ')#
+dir()#
+{#
+	f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table)#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7) {#
+			i <- i + 1#
+			if (ini[i,2] < out[i,2]){#
+				k <- ini[i,2]#
+				ini[i,2] <- out[i,2]#
+				out[i,2] <- k#
+			}#
+		}#
+		return(ini)#
+	}#
+#
+	d[1] <- change(in1, out1)
+}
+Q_supply <- (sum(d[1], sum(d[3], sum(d[5])
+)
+stop
+Q_supply <- (sum(d[1], sum(d[3], sum(d[5]))
+;
+Q_supply <- (sum(d[1]), sum(d[3]), sum(d[5]))
+Q_supply <- c(sum(d[1]), sum(d[3]), sum(d[5]))
+d[1,2]
+d[1]
+d
+d[[1]]
+d[[20]]
+f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table)
+d[[1]]
+d[[1,2]]
+d[[1],2]
+d[[1[2]]]
+d[[1[,2]]]
+d[1[2]]
+d[2]
+d[1,2]
+d[1,2,2]
+d[1,,2]
+d[1,1,2]
+d[V2]
+d[1[V2]]
+v2
+d[v2]
+in1 <- d[[1]]
+in1
+Q_supply <- c(sum(d[[1]]), sum(d[[3]]), sum(d[[5]]))
+Q_supply <- c(sum(d[1]), sum(d[3]), sum(d[5]))
+d[1]
+d <- apply(f, read.table)
+f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- apply(f, read.table)
+f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- supply(f, read.table)
+f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lupply(f, read.table)
+f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- sapply(f, read.table)
+d
+f[1]
+v1[2]
+v1
+in1 <- f[1]
+in1
+in1 <- read.table(f[1])
+in1
+in1 <- readLines(f[1])
+in1
+in1 <- read.csv(f[1])
+in1
+in1 <- read.table(f[1])
+in1
+f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"), fsep = .Platform$file.sep)
+f
+f[1]
+in1 <- read.table(f)
+in1 <- read.table(f[1])
+in1
+d <- lapply(f, read.table)
+d
+d <- apply(f, read.table)
+f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table)
+d
+f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table(header = T))
+f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table(header = FALSE))
+d <- rbindlist(lapply(f, read.table))
+d <- lapply(f, read.table)
+d
+d <- lapply(f, read.table, header = FALSE)
+d
+d <- lapply(f, read.table, header = TRUE)
+d
+Q_supply <- c(sum(d[1]), sum(d[3]), sum(d[5]))
+in1 <- c(d[1], d[2])
+in1
+{#
+	f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table, header = TRUE)#
+#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i <= 7){#
+			i <- i + 1#
+			if (ini[i, 2] < out[i, 2]){#
+				k <- ini[i, 2]#
+				ini[i, 2] <- out[i ,2]#
+				out[i, 2] <- k#
+			}#
+		}#
+		return(ini)#
+	}#
+	in1 <- change(d[1], d[2])#
+}
+{#
+	f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table, header = TRUE)#
+#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		i <- 0#
+		while (i < 7){#
+			i <- i + 1#
+			if (ini[i, 2] < out[i, 2]){#
+				k <- ini[i, 2]#
+				ini[i, 2] <- out[i ,2]#
+				out[i, 2] <- k#
+			}#
+		}#
+		return(ini)#
+	}#
+	in1 <- change(d[1], d[2])#
+}
+d[1]
+d[1[1,2]]
+d[1[2]]
+d[[1]]
+d[[1[2]]]
+d[[1[1,2]]]
+[[,2]]
+d[,2]
+d[, , 2]
+in1
+{#
+	f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table, header = TRUE)#
+#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out)#
+		x <- ini#
+		y <- out#
+		i <- 0#
+		while (i <= 7){#
+			i <- i + 1#
+			if (x[i, 2] < y[i, 2]){#
+				k <- x[i, 2]#
+				x[i, 2] <- y[i ,2]#
+				x[i, 2] <- k#
+			}#
+		}#
+		return(x)#
+	}#
+	in1 <- change(d[1], d[2])#
+}
+{#
+	f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table, header = TRUE)#
+#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out)#
+		x <- ini#
+		y <- out#
+		i <- 0#
+		while (i <= 7){#
+			i <- i + 1#
+			if (x[i, 2] < y[i, 2]){#
+				k <- x[i, 2]#
+				x[i, 2] <- y[i ,2]#
+				x[i, 2] <- k#
+			}#
+		}#
+		return(c(x,y))#
+	}#
+	in1 <- change(d[1], d[2])#
+}
+{#
+	f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table, header = TRUE)#
+#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out)#
+		x <- ini#
+		y <- out#
+		i <- 0#
+		while (i <= 7){#
+			i <- i + 1#
+			if (x[i, 2] < y[i, 2]){#
+				k <- x[i, 2]#
+				x[i, 2] <- y[i ,2]#
+				x[i, 2] <- k#
+			}#
+		}#
+		return(x)#
+	}#
+	in1 <- change(ini = d[1],out = d[2])#
+}
+{#
+	f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table, header = TRUE)#
+#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out)#
+		x <- ini#
+		y <- out#
+		i <- 0#
+		while (i <= 7){#
+			i <- i + 1#
+			if (x[i, 2] < y[i, 2]){#
+				k <- x[i, 2]#
+				x[i, 2] <- y[i ,2]#
+				x[i, 2] <- k#
+			}#
+		}#
+		return(x)#
+	}#
+	in1 <- change(ini = d[1], out = d[2])#
+}
+{#
+	f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table, header = TRUE)#
+#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		x <- ini#
+		y <- out#
+		i <- 0#
+		while (i <= 7){#
+			i <- i + 1#
+			if (x[i, 2] < y[i, 2]){#
+				k <- x[i, 2]#
+				x[i, 2] <- y[i ,2]#
+				x[i, 2] <- k#
+			}#
+		}#
+		return(x)       #
+	}#
+	in1 <- change(ini = d[1], out = d[2])#
+}
+in1 = d[1]
+in1
+in1[1, 2]
+d <- lapply(f, read.table, header = TRUE, sep = '\n')
+d
+in1
+in1[2]
+in1[1[2]]
+in1 <- list(d[1])
+in1
+d <- lapply(f, read.table, header = TRUE)
+in1 <- list(d[1])
+in1
+as.list(in1) <- d[1]
+typeof(d[1])
+in1 <- read.table("store1_in.txt", header = T)
+in1
+in1 <- d[[1]]
+in1
+{#
+	f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table, header = TRUE)#
+#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		x <- ini#
+		y <- out#
+		i <- 0#
+		while (i <= 7){#
+			i <- i + 1#
+			if (x[i, 2] < y[i, 2]){#
+				k <- x[i, 2]#
+				x[i, 2] <- y[i ,2]#
+				x[i, 2] <- k#
+			}#
+		}#
+		return(x)       #
+	}#
+	in1 <- change(ini = d[[1]], out = d[[2]]) #
+}
+{#
+	f <- file.path('/Users/leotemirov/Documents/R/кр/Апельсин/Анализ', c("store1_in.txt", 'store1_out.txt', "store2_in.txt", "store2_out.txt", "store3_in.txt", "store3_out.txt", "store4_in.txt", "store4_out.txt", "store5_in.txt", "store5_out.txt", "store6_in.txt", "store6_out.txt", "store7_in.txt", "store7_out.txt", "store8_in.txt", "store8_out.txt", "store9_in.txt", "store9_out.txt", "store10_in.txt", "store10_out.txt"))#
+	d <- lapply(f, read.table, header = TRUE)#
+#
+	# проверяем не превышают ли продажи поставки, если превышают то меняем занчения#
+	change <- function(ini, out){#
+		ini[ini < out] <- out[ini < out]#
+		return(ini)#
+	}#
+#
+	in1 <- change(d[[1]], d[[2]]) #
+	in2 <- change(d[[3]], d[[4]])#
+	in3 <- change(d[[5]], d[[6]])#
+	in4 <- change(d[[7]], d[[8]])#
+	in5 <- change(d[[9]], d[[10]])#
+	in6 <- change(d[[11]], d[[12]])#
+	in7 <- change(d[[13]], d[[14]])#
+	in8 <- change(d[[15]], d[[16]])#
+	in9 <- change(d[[17]], d[[18]])#
+	in10 <- change(d[[19]], d[[20]])#
+#
+	change2 <- function(ini, out){#
+		out[ini < out] <- ini[ini < out]#
+		return(out)#
+	}#
+#
+	out1 <- change2(d[[1]], d[[2]]) #
+	out2 <- change2(d[[3]], d[[4]])#
+	out3 <- change2(d[[5]], d[[6]])#
+	out4 <- change2(d[[7]], d[[8]])#
+	out5 <- change2(d[[9]], d[[10]])#
+	out6 <- change2(d[[11]], d[[12]])#
+	out7 <- change2(d[[13]], d[[14]])#
+	out8 <- change2(d[[15]], d[[16]])#
+	out9 <- change2(d[[17]], d[[18]])#
+	out10 <- change2(d[[19]], d[[20]])#
+#
+	entire1 <- list(in1, in2, in3, in4, in5, in6, in7, in8, in9, in10)#
+	entire2 <- list(out1, out2, out3, out4, out5, out6, out7, out8, out9, out10)#
+}#
+#
+# создаем таблицу #
+{	x <- (length(in1) - 1) * 10 + (length(in1) - 1) * 2#
+	res.tab <- data.frame("Выручка руб" = c(rep(0, x)), "Прибыль руб"= c(rep(0, x)))#
+	res.tab$"Реализация, конт." <- 0#
+	res.tab$"Списание, конт." <- 0#
+	res.tab$'sd' <- 0#
+	res.tab$"Продажи макс" <- 0#
+	res.tab <- cbind(res.tab, День = c(rep(0, x)))#
+	res.tab$"Продажи мин" <- 0#
+	res.tab <- cbind(res.tab, День = c(rep(0, x)))#
+	res.tab$"Списание макс" <- 0#
+	res.tab <- cbind(res.tab, День = c(rep(0, x)))#
+#
+}#
+#
+# выполняем расчеты#
+{#
+	P <- 57#
+	P_supply <- 35#
+	P_util <- 22#
+#
+	summarize <- function(en, f = in1){#
+		i <- 2#
+		Q <- vector()#
+		while (i <= length(f)){#
+			for (j in en){#
+				Q <- append(Q, values = sum(j[i]))#
+			}#
+			i <- i + 1#
+		}#
+		return(Q)#
+	}#
+	Q_sale <- summarize(entire2) #
+	Q_supply <- summarize(entire1)#
+	Q_util <- Q_supply - Q_sale#
+	TR <- Q_sale * P#
+	TC <- Q_supply * P_supply + Q_util * P_util#
+	Pr <- TR - TC#
+	k <- 1#
+	v <- 7#
+	l <- 1#
+	uniformity <- vector()#
+	uniformity1 <- vector()#
+	while(k <= length(entire2)){#
+		h <- entire2[[k]]#
+		for (j in 2 : ncol(h)){#
+			for (i in 1 : nrow(h)){			#
+				uniformity <- append(uniformity, h[i,j])#
+			}#
+			uniformity1 <- append(uniformity1, sd(uniformity[k : v]))#
+				uniformity <- uniformity[1:l]#
+				v <- v + 1#
+				l <- l + 1#
+		}#
+		k <- k + 1#
+	}#
+#
+	enter <- function(x, f = in1, table = res.tab, number){#
+		i <- 1#
+		k <- 10#
+		while (i < (length(f) - 1) * 10){#
+			x <- append(x, values = c(sum(x[i:k]), mean(x[i:k])), after = k)#
+			i <- i + 12#
+			k <- k + 12#
+		}#
+		res.tab[[number]] <- x#
+		return(res.tab)#
+	}#
+#
+	res.tab <- enter(Q_sale, f = in1, table = res.tab, 3)#
+	res.tab <- enter(TR, f = in1, table = res.tab, 1)#
+	res.tab <- enter(Pr, f = in1, table = res.tab, 2)#
+	res.tab <- enter(Q_util, f = in1, table = res.tab, 4)#
+	res.tab <- enter(uniformity1, f = in1, table = res.tab, 5)#
+#
+	j <- 1#
+	i <- 2#
+	max_util <- vector()#
+	day_max_util <- vector()#
+	while (i <= length(in1)){#
+		while (j <= length(entire1)){#
+			x <- entire1[[j]]#
+			y <- entire2[[j]]#
+			max_util <- append(max_util, max(x[i] - y[i]))#
+			day_max_util <- append(day_max_util, which((x[i] - y[i]) == max(x[i] - y[i])))#
+			j <- j + 1#
+		}#
+		i <- i + 1#
+		j <- 1#
+	}#
+}#
+#
+{		#
+	i <- 2#
+	j <- 1#
+	max_sale <- vector()#
+	min_sale <- vector()#
+	day_max_sale <- vector()#
+	day_min_sale <- vector()#
+	while (i <= length(in1)){#
+		while (j <= length(entire2)){#
+			x <- as.matrix(entire2[[j]])#
+			max_sale <- append(max_sale, values = max(x[, i]))#
+			min_sale <- append(min_sale, values = min(x[, i]))#
+			day_min_sale <- append(day_min_sale, which.min(x[, i]))#
+			day_max_sale <- append(day_max_sale, which.max(x[, i]))		#
+			j <- j + 1#
+		}#
+		i <- i + 1#
+		j <- 1#
+	}#
+#
+}	#
+#
+{	#
+	addition <- function(m, table = res.tab, number){#
+		i <- 10#
+		while (i <= nrow(table)){#
+			m <- append(m, c('', ''), after = i)#
+			i <- i + 12#
+		}#
+		table[[number]] <- m#
+		return(table)#
+	}#
+#
+	res.tab <- addition(max_util, table = res.tab, 10)#
+	res.tab <- addition(max_sale, table = res.tab, 6)#
+	res.tab <- addition(min_sale, table = res.tab, 8)#
+	res.tab <- addition(day_max_sale, table = res.tab, 7)#
+	res.tab <- addition(day_min_sale, table = res.tab, 9)#
+	res.tab <- addition(day_max_util, table = res.tab, 11)#
+#
+	names <- rep(c('Магазин1', 'Магазин2', 'Магазин3', 'Магазин4', 'Магазин5', 'Магазин6', 'Магазин7', 'Магазин8', 'Магазин9', 'Магазин10', 'Итого', 'Среднее'), (length(in1) - 1))#
+	rownames(res.tab) <- make.names(names, unique = TRUE)#
+#
+	k <- 12#
+	i <- 1#
+	while (i <= nrow(res.tab)){#
+		write.table(res.tab[i:k,], file = paste0('/Users/leotemirov/Documents/R/кр/Апельсин/Result/resTab', i, '.csv'), sep = ';', col.names = NA,  dec = ',' )#
+		i <- i + 12#
+		k <- k + 12#
+	}#
+#
+}
